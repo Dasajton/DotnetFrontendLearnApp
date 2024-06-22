@@ -4,7 +4,8 @@ import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom"
 import "./index.scss";
 import { PageWelcome } from "./pages/PageWelcome.tsx";
 import { PageInfo } from "./pages/PageInfo.tsx";
-import { PageAbout } from "./pages/PageAbout.tsx";
+import { PageWeather } from "./pages/PageWeather.tsx";
+import { PageLearn } from "./pages/PageLearn.tsx";
 import { Page404 } from "./pages/Page404.tsx";
 
 const router = createBrowserRouter([
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "about",
-				element: <PageAbout />,
+				element: <PageWeather />,
+			},
+			{
+				path: "learn",
+				element: <PageLearn />,
 			},
 			{
 				path: "/",
